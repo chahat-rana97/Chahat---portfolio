@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chahat Rana — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#"><span class="logo-circle">CR</span> <span class="name">Chahat Rana</span></a>
+      </div>
+      <nav class="nav-links">
+        <a href="#hero">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌓</button>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="accent">Chahat Rana</span></h1>
+        <p class="lead">
+          As a <strong>Flutter developer</strong> and <strong>Full-Stack enthusiast</strong>, I enjoy building clean, responsive web & mobile applications. 
+          I specialize in <strong>software application development</strong>, working across both front-end and back-end technologies to create 
+          solutions that are scalable, efficient, and user-friendly.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn view-btn">🚀 My Work</a>
+          <a href="Chahat_Rana_Resume.pdf" download class="btn view-btn">📄 Resume</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="chahat resume 2.jpg" alt="Chahat Rana" class="profile">
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">
+        A selection of projects ranging from academic and personal explorations to professional, industry-level applications —
+        showcasing expertise in web development, responsive design, and software solutions.
+      </p>
+
+      <div class="grid projects-grid">
+        <article class="card project-card" 
+                 data-title="Unit Converter"
+                 data-description="🚀 Meet my <b>Unit Converter App</b> —<br> a smart, cross-platform tool I built with Flutter, available on both <b>Web</b> and <b>Android</b>.  
+With support for 10+ categories like length, area, mass, volume, temperature, speed, time, energy, angle, frequency, force, and pressure, you can convert anything in seconds.  
+✨ What makes it fun? An <b>interactive graph mode</b> to visualize conversions, a <b>practice mode</b> with quiz-style questions to test your skills, and a sleek modern UI that feels smooth on every device.  
+This project highlights my skills in Flutter development, responsive design, and creating apps that are not only powerful but also enjoyable to use. "
+                 data-images="unit converter\uc1.png,unit converter\uc2.png,unit converter\uc3.png"
+                 data-link="project.html">
+          <img src="newuc1.png" alt="Unit Converter preview">
+          <div class="card-body">
+            <h3>Unit Converter</h3>
+            <p>A smart Flutter-based unit converter with 10+ categories, interactive graph mode, and practice quizzes.</p>
+          </div>
+        </article>
+
+        <article class="card project-card"
+                 data-title="Curve Plotter"
+                 data-description="<p>
+📊 <b>Curve Plotter</b><br><br>
+A web-based interactive application that allows users to <b>visualize polynomial functions up to degree 3</b> in real time. Users can input coefficients for cubic, quadratic, linear, or constant functions, and the tool dynamically generates the corresponding curve on a graph.<br><br>
+
+<b>🔑 Features:</b><br>
+• Polynomial Visualization: Supports cubic, quadratic, linear, and constant functions.<br>
+• Real-Time Plotting: Instantly updates the graph based on user inputs.<br>
+• User-Friendly Interface: Intuitive coefficient input fields with a clean design.<br>
+• Responsive Graph: Zoom and reset options for better curve exploration.<br>
+• Educational Tool: Helps students and learners understand polynomial behavior through visualization.<br><br>
+
+<b>🛠️ Tech Stack:</b><br>
+• Frontend: HTML, CSS, JavaScript<br>
+• Graphing Library: Chart.js / Plotly.js (or the one you used)<br><br>
+
+<b>🚀 Outcome:</b><br>
+This project simplifies the process of understanding and analyzing polynomial curves, making it a valuable tool for <b>students, educators, and math enthusiasts</b>.
+</p>
+"
+                 data-images="Curve Ploter\cp2.png,Curve Ploter\cp2.png,Curve Ploter\cp3.png"
+                 data-link="project.html">
+          <img src="Curve Ploter\cp2.png" alt="Portfolio UI preview">
+          <div class="card-body"> 
+            <h3>Curve ploter</h3>
+            <p>An interactive Curve Plotter that visualizes polynomial functions up to degree 3 in real time with dynamic graphing.</p>
+          </div>
+        </article>
+
+        <article class="card project-card"
+                 data-title="Attendly"
+                 data-description="<p>
+📲 <b>Attendly (Attendance App)</b><br><br>
+An industry-based attendance management system built with <b>Flutter, Node.js, and MySQL</b>. Employees can <b>check in and check out</b> in real-time, with data securely stored in a <b>live backend hosted on Render</b>. The app also provides access to <b>attendance history</b>, ensuring accuracy and transparency.<br><br>
+
+<b>🔑 Features:</b><br>
+• Real-Time Attendance: Employees can check in/out seamlessly.<br>
+• Attendance History: Users can view past records anytime.<br>
+• Secure Data Storage: Records saved in MySQL with backend APIs.<br>
+• Cross-Platform: Built with Flutter for Android/iOS support.<br>
+• Cloud Deployment: Backend hosted live on Render.<br><br>
+
+<b>🛠️ Tech Stack:</b><br>
+• Frontend: Flutter (Dart)<br>
+• Backend: Node.js, Express.js<br>
+• Database: MySQL<br>
+• Hosting: Render<br><br>
+
+<b>🚀 Outcome:</b><br>
+A scalable and efficient solution for businesses to manage employee attendance, while giving employees transparency through <b>real-time tracking and history access</b>.
+</p>
+"
+                 data-images="attendance app\ats1.jpg,attendance app\ats2.jpg,attendance app\at1.jpg,attendance app\at2.jpg,attendance app\at3.jpg,attendance app\at4.jpg"
+                 data-link="project.html">
+          <img src="attendance app\at1.jpg" alt="attendly">
+          <div class="card-body">
+            <h3>Attendly</h3>
+            <p>A cross-platform Flutter app with Node.js + MySQL backend that allows employees to check in/out and track their attendance history in real time.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="view-more">
+        <a href="projects.html" class="btn view-btn">View More →</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102628.png" alt="Flutter"><span>Flutter</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102643.png" alt="Dart"><span>Dart</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102541.png" alt="Java"><span>Java</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102552.png" alt="HTML"><span>HTML</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102600.png" alt="CSS"><span>CSS</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102607.png" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102621.png" alt="MySQL"><span>MySQL</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102652.png" alt="Node.js"><span>Node.js</span></div>
+        <div class="skill-card"><img src="api.png" alt="REST API"><span>REST API</span></div>
+        <div class="skill-card"><img src="images.jpeg" alt="AI"><span>Artificial Intelligence</span></div>
+        <div class="skill-card"><img src="download.png" alt="Mobile App Dev"><span>Mobile App Dev</span></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact-section">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-subtitle">Let’s Connect and Collaborate!</p>
+          <p class="contact-text">Whether you have a project in mind, a question to ask, or just want to say hello, feel free to reach out—I’d love to hear from you.</p>
+          <div class="contact-details">
+            <a href="mailto:ranachahat@gmail.com" class="contact-email">✉️ ranachahat@gmail.com</a>
+            <div class="contact-socials">
+  <a href="https://www.hackerrank.com/profile/ranachahat036" target="_blank"><i class="fab fa-hackerrank"></i></a>
+  <a href="https://www.linkedin.com/in/chahat-rana-306391218/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://github.com/chahat-rana97" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <input type="text" name="first_name" placeholder="First Name" required />
+            <input type="text" name="last_name" placeholder="Last Name" required />
+          </div>
+          <div class="form-group"><input type="email" name="from_email" placeholder="Email" required /></div>
+          <div class="form-group"><textarea name="message" rows="5" placeholder="Message" required></textarea></div>
+          <button type="submit" class="btn send-btn">Send</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Chahat Rana — Crafted with passion & precision.</p>
+
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title">Project Title</h2>
+      <!-- Swiper for project images -->
+      <div class="swiper modal-swiper">
+        <div class="swiper-wrapper" id="modal-images"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <p id="modal-description"></p>
+      <a id="modal-link" href="#" target="_blank" class="btn view-btn">🔗 View Project</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
