@@ -84,67 +84,6 @@
   }
 })();
 
-// Modal elements
-const modal = document.getElementById("project-modal");
-const closeBtn = document.querySelector(".close-btn");
-const modalTitle = document.getElementById("modal-title");
-const modalImage = document.getElementById("modal-image");
-const modalDescription = document.getElementById("modal-description");
-const modalLink = document.getElementById("modal-link");
-
-// Example data for projects (you can expand this)
-const projectData = {
-  "Unit Converter": {
-    title: "Unit Converter",
-    description: "A responsive unit converter web app built with HTML, CSS, and JS.",
-    image: "newuc1.png",
-    link: "project.html"
-  },
-  "Portfolio UI": {
-    title: "Portfolio UI",
-    description: "A modern portfolio UI with animations and smooth transitions.",
-    image: "Screenshot 2025-04-02 003746.png",
-    link: "project.html"
-  },
-  "Git & Collaboration": {
-    title: "Git & Collaboration",
-    description: "Demonstrates Git workflows, commits, and team collaboration.",
-    image: "git2.png",
-    link: "project.html"
-  }
-};
-
-// Attach event to project cards
-document.querySelectorAll(".projects-grid .card").forEach(card => {
-  card.addEventListener("click", () => {
-    const projectName = card.querySelector("h3").innerText;
-    const data = projectData[projectName];
-
-    // Fill modal with project data
-    modalTitle.textContent = data.title;
-    modalImage.src = data.image;
-    modalDescription.textContent = data.description;
-    modalLink.href = data.link;
-
-    // Show modal
-    modal.style.display = "flex";
-    document.body.classList.add("modal-open");
-  });
-});
-
-// Close modal
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-  document.body.classList.remove("modal-open");
-});
-
-// Close when clicking outside content
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-    document.body.classList.remove("modal-open");
-  }
-});
 // ================================
 // 🖼️ Swiper Carousel Init
 // ================================
@@ -169,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 // ================================
 // Project Modal with Swiper
 // ================================
@@ -190,10 +128,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const images = card.dataset.images.split(",");
 
       modalTitle.textContent = title;
-      modalDesc.innerHTML = desc;   // ✅ allow HTML & emojis
+      modalDesc.innerHTML = desc;
       modalLink.href = link;
 
-      // Reset images
+      // ✅ Always open in new tab
+      modalLink.target = "_blank";
+      modalLink.rel = "noopener noreferrer";
+
       modalImages.innerHTML = "";
       images.forEach(img => {
         const slide = document.createElement("div");
@@ -204,7 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       modal.style.display = "flex";
 
-      // Init / Reinit swiper
       if (swiperInstance) swiperInstance.destroy(true, true);
       swiperInstance = new Swiper(".modal-swiper", {
         loop: true,
@@ -218,17 +158,16 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("click", (e) => { if (e.target === modal) modal.style.display = "none"; });
 });
 
-
+// ================================
 // Certificate Modal Functionality
+// ================================
 document.addEventListener('DOMContentLoaded', function () {
   const certificateModal = document.getElementById('certificate-modal');
   const certificateCards = document.querySelectorAll('.certificate-card');
   const closeCertificateModal = document.querySelector('.certificate-modal-close');
   const closeCertificateModalBtn = document.querySelector('.certificate-modal-close-btn');
 
-  // Certificate data
   const certificateData = {
-
     'vidyamine': {
       title: 'Certificate of Internship',
       issuer: 'Vidya Mine Pvt. Ltd.',
@@ -279,7 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  // Add data attributes to certificate cards
   document.querySelectorAll('.certificate-card').forEach((card, index) => {
     const certificates = ['vidyamine','aspire', 'softpro', 'hackerrank', 'freecodecamp', 'webdev'];
     if (index < certificates.length) {
@@ -287,7 +225,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Open certificate modal
   certificateCards.forEach(card => {
     card.addEventListener('click', function () {
       const certificateId = this.getAttribute('data-certificate');
@@ -307,7 +244,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Close certificate modal
   function closeModal() {
     certificateModal.style.display = 'none';
     document.body.style.overflow = 'auto';
@@ -316,7 +252,6 @@ document.addEventListener('DOMContentLoaded', function () {
   closeCertificateModal.addEventListener('click', closeModal);
   closeCertificateModalBtn.addEventListener('click', closeModal);
 
-  // Close modal when clicking outside
   certificateModal.addEventListener('click', function (e) {
     if (e.target === certificateModal) {
       closeModal();
@@ -326,7 +261,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ===== ENHANCED ANIMATIONS & TRANSITIONS =====
 document.addEventListener('DOMContentLoaded', function () {
-  // Observe sections for animation
   const sections = document.querySelectorAll('.section');
   const timelineItems = document.querySelectorAll('.timeline-item');
 
@@ -335,7 +269,6 @@ document.addEventListener('DOMContentLoaded', function () {
     rootMargin: '0px 0px -50px 0px'
   };
 
-  // General section reveal
   const sectionObserver = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -350,13 +283,12 @@ document.addEventListener('DOMContentLoaded', function () {
     sectionObserver.observe(section);
   });
 
-  // Timeline items with stagger + animation variety
   const timelineObserver = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
         setTimeout(() => {
           entry.target.classList.add('visible');
-        }, index * 150); // faster stagger
+        }, index * 150);
         observer.unobserve(entry.target);
       }
     });
@@ -366,7 +298,6 @@ document.addEventListener('DOMContentLoaded', function () {
     timelineObserver.observe(item);
   });
 
-  // Enhanced mobile menu toggle with animation
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
@@ -386,7 +317,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Enhanced smooth scroll for navigation links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -419,7 +349,6 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle.addEventListener('click', function () {
       document.body.classList.add('theme-changing');
 
-      // Glow ripple effect
       toggle.classList.add('pulse');
       setTimeout(() => toggle.classList.remove('pulse'), 600);
 

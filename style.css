@@ -886,4 +886,38 @@ body,
 #theme-toggle:hover {
   transform: rotate(180deg);
 }
+ .project-link {
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+}
+
+/* Prevent the button from triggering card click */
+.project-link, .project-link * {
+  pointer-events: none;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: var(--primary, #007bff);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.card .btn:hover {
+  background: var(--primary-dark, #0056b3);
+}
+
+
 

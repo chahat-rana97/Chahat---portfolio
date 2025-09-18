@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
   <!-- Header -->
   <header class="nav">
@@ -17,15 +19,15 @@
       <div class="brand">
         <a href="#"><span class="logo-circle">CR</span> <span class="name">Chahat Rana</span></a>
       </div>
-<nav class="nav-links">
-  <a href="#hero">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#certificates">Certificates</a>
-  <a href="#contact">Contact</a>
-  <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌓</button>
-</nav>
+      <nav class="nav-links">
+        <a href="#hero">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌓</button>
+      </nav>
       <button class="nav-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
@@ -36,13 +38,15 @@
       <div class="hero-content">
         <h1>Hi, I'm <span class="accent">Chahat Rana</span></h1>
         <p class="lead">
-          As a <strong>Flutter developer</strong> and <strong>Full-Stack enthusiast</strong>, I enjoy building clean, responsive web & mobile applications. 
-          I specialize in <strong>software application development</strong>, working across both front-end and back-end technologies to create 
+          As a <strong>Flutter developer</strong> and <strong>Full-Stack enthusiast</strong>, I enjoy building clean,
+          responsive web & mobile applications.
+          I specialize in <strong>software application development</strong>, working across both front-end and back-end
+          technologies to create
           solutions that are scalable, efficient, and user-friendly.
         </p>
         <div class="hero-ctas">
           <a href="#projects" class="btn view-btn">🚀 My Work</a>
-          <a href="chahat_resume.pdf" download class="btn view-btn">📄 Resume</a>
+          <a href="Chahat014.pdf" download class="btn view-btn">📄 Resume</a>
         </div>
       </div>
       <div class="hero-media">
@@ -54,92 +58,177 @@
     <section id="projects" class="section container">
       <h2 class="section-title">Projects</h2>
       <p class="section-sub">
-        A selection of projects ranging from academic and personal explorations to professional, industry-level applications —
+        A selection of projects ranging from academic and personal explorations to professional, industry-level
+        applications —
         showcasing expertise in web development, responsive design, and software solutions.
       </p>
 
       <div class="grid projects-grid">
-        <article class="card project-card" 
-                 data-title="Unit Converter"
-                 data-description="🚀 Meet my <b>Unit Converter App</b> —<br> a smart, cross-platform tool I built with Flutter, available on both <b>Web</b> and <b>Android</b>.  
-With support for 10+ categories like length, area, mass, volume, temperature, speed, time, energy, angle, frequency, force, and pressure, you can convert anything in seconds.  
-✨ What makes it fun? An <b>interactive graph mode</b> to visualize conversions, a <b>practice mode</b> with quiz-style questions to test your skills, and a sleek modern UI that feels smooth on every device.  
-This project highlights my skills in Flutter development, responsive design, and creating apps that are not only powerful but also enjoyable to use. "
-                 data-images="unit converter\uc1.png,unit converter\uc2.png,unit converter\uc3.png"
-                 data-link="project.html">
-          <img src="newuc1.png" alt="Unit Converter preview">
-          <div class="card-body">
-            <h3>Unit Converter</h3>
-            <p>A smart Flutter-based unit converter with 10+ categories, interactive graph mode, and practice quizzes.</p>
-          </div>
-        </article>
+        <article class="card project-card" data-title="Unit Converter"
+  data-description="<p>
+📱 <b>Unit Converter App</b><br><br>
+A <b>smart, cross-platform application</b> built with <b>Flutter</b>, seamlessly available on both <b>Web and Android</b>. Designed to be fast, intuitive, and visually engaging, it supports <b>10+ categories</b> including Length, Area, Mass, Volume, Temperature, Speed, Time, Energy, Angle, Frequency, Force, and Pressure — making conversions effortless in just seconds.<br><br>
 
-        <article class="card project-card"
-                 data-title="Curve Plotter"
-                 data-description="<p>
+<b>🔑 Features:</b><br>
+• Wide Range of Categories: 10+ unit types supported for versatile conversions.<br>
+• Real-Time Conversion: Instant results with smooth calculations.<br>
+• Interactive Graph Mode: Visualize conversion trends in real time.<br>
+• Practice Mode: Quiz-style challenges to test and enhance learning.<br>
+• Sleek Modern UI: Clean, responsive, and user-friendly design across devices.<br><br>
+
+<b>🛠️ Tech Stack:</b><br>
+• Framework: Flutter<br>
+• Language: Dart<br>
+• Platforms: Web & Android<br>
+• Libraries: Custom logic, fl_chart (or ones you used)<br><br>
+
+<b>🚀 Outcome:</b><br>
+This project highlights my skills in <b>Flutter development, responsive design, and creating apps</b> that are not only powerful but also <b>educational and enjoyable to use</b>.
+</p>
+"
+  data-images="unit converter/uc1.png,unit converter/uc2.png,unit converter/uc3.png" 
+  data-link="https://play.google.com/store/apps/details?id=com.vidyamine.app">
+
+  <img src="newuc1.png" alt="Unit Converter preview">
+  <div class="card-body">
+    <h3>Unit Converter</h3>
+    <p>
+      A smart Flutter-based unit converter with 10+ categories, interactive graph mode, and practice quizzes.
+    </p>
+
+    <button 
+  style="background-color:#007BFF; color:white; padding:4px 8px; 
+         border:none; border-radius:4px; cursor:pointer; font-weight:500; 
+         font-size:12px; margin-top:10px;" 
+  onclick="window.open('https://play.google.com/store/apps/details?id=com.vidyamine.app', '_blank')">
+  VIEW PROJECT
+</button>
+
+  </div>
+</article>
+
+        <article class="card project-card" data-title="Curve Plotter" data-description="<p>
 📊 <b>Curve Plotter</b><br><br>
-A web-based interactive application that allows users to <b>visualize polynomial functions up to degree 3</b> in real time. Users can input coefficients for cubic, quadratic, linear, or constant functions, and the tool dynamically generates the corresponding curve on a graph.<br><br>
+A <b>Flutter-based interactive mobile application</b> that allows users to <b>visualize polynomial functions up to degree 3</b> in real time. Users can input coefficients for cubic, quadratic, linear, or constant functions, and the tool dynamically generates the corresponding curve on a graph.<br><br>
 
 <b>🔑 Features:</b><br>
 • Polynomial Visualization: Supports cubic, quadratic, linear, and constant functions.<br>
 • Real-Time Plotting: Instantly updates the graph based on user inputs.<br>
 • User-Friendly Interface: Intuitive coefficient input fields with a clean design.<br>
-• Responsive Graph: Zoom and reset options for better curve exploration.<br>
+• Interactive Graph: Zoom and reset options for better curve exploration.<br>
 • Educational Tool: Helps students and learners understand polynomial behavior through visualization.<br><br>
 
 <b>🛠️ Tech Stack:</b><br>
-• Frontend: HTML, CSS, JavaScript<br>
-• Graphing Library: Chart.js / Plotly.js (or the one you used)<br><br>
+• Framework: Flutter<br>
+• Language: Dart<br>
+• Graphing Library: fl_chart / syncfusion_flutter_charts (or the one you used)<br><br>
 
 <b>🚀 Outcome:</b><br>
 This project simplifies the process of understanding and analyzing polynomial curves, making it a valuable tool for <b>students, educators, and math enthusiasts</b>.
 </p>
-"
-                 data-images="Curve Ploter\cp2.png,Curve Ploter\cp2.png,Curve Ploter\cp3.png"
-                 data-link="project.html">
+
+" data-images="Curve Ploter\cp2.png,Curve Ploter\cp2.png,Curve Ploter\cp3.png" data-link="project.html">
           <img src="Curve Ploter\cp2.png" alt="Portfolio UI preview">
-          <div class="card-body"> 
+          <div class="card-body">
             <h3>Curve ploter</h3>
-            <p>An interactive Curve Plotter that visualizes polynomial functions up to degree 3 in real time with dynamic graphing.</p>
+            <p>An interactive Curve Plotter that visualizes polynomial functions up to degree 3 in real time with
+              dynamic graphing.</p>
+
+              <button 
+  style="background-color:#007BFF; color:white; padding:4px 8px; 
+         border:none; border-radius:4px; cursor:pointer; font-weight:500; 
+         font-size:12px; margin-top:10px;" 
+  onclick="window.open('https://play.google.com/store/apps/details?id=com.vidyamine.app', '_blank')">
+  VIEW PROJECT
+</button>
           </div>
         </article>
 
-        <article class="card project-card"
-                 data-title="Attendly"
-                 data-description="<p>
+        <article class="card project-card" data-title="Attendly" data-description="<p>
+<p>
 📲 <b>Attendly (Attendance App)</b><br><br>
-An industry-based attendance management system built with <b>Flutter, Node.js, and MySQL</b>. Employees can <b>check in and check out</b> in real-time, with data securely stored in a <b>live backend hosted on Render</b>. The app also provides access to <b>attendance history</b>, ensuring accuracy and transparency.<br><br>
+A robust <b>industry-focused attendance management system</b> developed using <b>Flutter, Node.js, and MySQL</b>. The app enables employees to <b>check in and check out in real time</b>, with records securely stored in a <b>cloud-hosted backend on Render</b>. It also provides detailed <b>attendance history and analytics</b>, ensuring accuracy, transparency, and ease of management.<br><br>
 
 <b>🔑 Features:</b><br>
-• Real-Time Attendance: Employees can check in/out seamlessly.<br>
-• Attendance History: Users can view past records anytime.<br>
-• Secure Data Storage: Records saved in MySQL with backend APIs.<br>
-• Cross-Platform: Built with Flutter for Android/iOS support.<br>
-• Cloud Deployment: Backend hosted live on Render.<br><br>
+• Real-Time Attendance: Instant check-in/check-out with live sync.<br>
+• Attendance History: Complete access to past records for employees.<br>
+• Secure Data Storage: Reliable MySQL database with RESTful APIs.<br>
+• Cross-Platform Support: Built with Flutter for Android and iOS.<br>
+• Cloud Deployment: Backend hosted live on Render for scalability.<br>
+• Business-Ready: Designed to enhance workforce management efficiency.<br><br>
 
 <b>🛠️ Tech Stack:</b><br>
 • Frontend: Flutter (Dart)<br>
-• Backend: Node.js, Express.js<br>
+• Backend: Node.js with Express.js<br>
 • Database: MySQL<br>
-• Hosting: Render<br><br>
+• Hosting & Deployment: Render<br><br>
 
 <b>🚀 Outcome:</b><br>
-A scalable and efficient solution for businesses to manage employee attendance, while giving employees transparency through <b>real-time tracking and history access</b>.
+Delivered a <b>scalable and efficient attendance management solution</b> that empowers businesses with real-time employee tracking while providing employees with <b>transparency, reliability, and easy access</b> to their records.
 </p>
-"
-                 data-images="attendance app\ats1.jpg,attendance app\ats2.jpg,attendance app\at1.jpg,attendance app\at2.jpg,attendance app\at3.jpg,attendance app\at4.jpg"
-                 data-link="project.html">
+
+" data-images="attendance app\ats1.jpg,attendance app\ats2.jpg,attendance app\at1.jpg,attendance app\at2.jpg,attendance app\at3.jpg,attendance app\at4.jpg"
+          data-link="project.html">
           <img src="attendance app\at1.jpg" alt="attendly">
           <div class="card-body">
             <h3>Attendly</h3>
-            <p>A cross-platform Flutter app with Node.js + MySQL backend that allows employees to check in/out and track their attendance history in real time.</p>
+            <p>A cross-platform Flutter app with Node.js + MySQL backend that allows employees to check in/out and track
+              their attendance history in real time.</p>
+
+              <button 
+  style="background-color:#007BFF; color:white; padding:4px 8px; 
+         border:none; border-radius:4px; cursor:pointer; font-weight:500; 
+         font-size:12px; margin-top:10px;" 
+  onclick="window.open('https://attendly-live.netlify.app', '_blank')">
+  VIEW PROJECT
+</button>
           </div>
         </article>
+        <article class="card project-card" data-title="ChemBalancer" data-description="<p>
+<p>
+🧪 <b>Chembalancer (Chemistry Equation App)</b><br><br>
+A <b>Flutter-based educational app</b> designed to help students <b>balance chemical equations</b> with ease. The app processes equations directly on-device and provides <b>step-by-step explanations</b>, making it a practical learning companion for chemistry learners. Built with <b>modern Flutter widgets and dependencies</b>, it ensures smooth performance and an intuitive user experience.<br><br>
+
+<b>🔑 Features:</b><br>
+• Equation Balancer: Instantly balances simple to complex chemical equations.<br>
+• Step-by-Step Solver: Displays balancing logic for clear understanding.<br>
+• Reaction Details: Includes type, conditions, and observations.<br>
+• Offline Functionality: No internet or backend required.<br>
+• Cross-Platform: Flutter ensures support for both Android and iOS.<br><br>
+
+<b>🛠️ Tech Stack:</b><br>
+• Framework: Flutter (Dart)<br>
+• Dependencies: <br>
+&nbsp;&nbsp;• <code>provider</code> – for state management<br>
+&nbsp;&nbsp;• <code>flutter_math_fork</code>  for rendering chemical formulas and equations<br>
+&nbsp;&nbsp;• <code>equatable</code> – for cleaner model handling<br>
+&nbsp;&nbsp;• <code>shared_preferences</code> for local storage of saved equations<br><br>
+
+<b>🚀 Outcome:</b><br>
+Created a <b>lightweight, offline-ready chemistry app</b> that simplifies balancing equations and enhances learning through <b>interactive, dependency-powered Flutter features</b>.
+</p>
+
+" data-images="ChemBalancer\Untitled design.jpg,ChemBalancer\5.jpg,ChemBalancer\4.jpg,ChemBalancer\2.jpg,ChemBalancer\3.jpg"
+          data-link="project.html">
+          <img src="ChemBalancer\Untitled design.jpg" alt="attendly">
+          <div class="card-body">
+  <h3>Chembalancer</h3>
+  <p>A cross-platform Flutter app that helps students balance chemical equations with step-by-step solutions,
+     reaction details, and offline support for interactive learning.</p>
+     <button 
+  style="background-color:#007BFF; color:white; padding:4px 8px; 
+         border:none; border-radius:4px; cursor:pointer; font-weight:500; 
+         font-size:12px; margin-top:10px;" 
+  onclick="window.open('https://chembalancerlive.netlify.app//', '_blank')">
+  VIEW PROJECT
+</button>
+</div>
+
+        </article>
+        
       </div>
 
-      <div class="view-more">
-        <a href="projects.html" class="btn view-btn">View More →</a>
-      </div>
+     
     </section>
 
     <!-- Skills -->
@@ -151,7 +240,8 @@ A scalable and efficient solution for businesses to manage employee attendance, 
         <div class="skill-card"><img src="Screenshot 2025-04-06 102541.png" alt="Java"><span>Java</span></div>
         <div class="skill-card"><img src="Screenshot 2025-04-06 102552.png" alt="HTML"><span>HTML</span></div>
         <div class="skill-card"><img src="Screenshot 2025-04-06 102600.png" alt="CSS"><span>CSS</span></div>
-        <div class="skill-card"><img src="Screenshot 2025-04-06 102607.png" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill-card"><img src="Screenshot 2025-04-06 102607.png" alt="JavaScript"><span>JavaScript</span>
+        </div>
         <div class="skill-card"><img src="Screenshot 2025-04-06 102621.png" alt="MySQL"><span>MySQL</span></div>
         <div class="skill-card"><img src="Screenshot 2025-04-06 102652.png" alt="Node.js"><span>Node.js</span></div>
         <div class="skill-card"><img src="api.png" alt="REST API"><span>REST API</span></div>
@@ -160,16 +250,17 @@ A scalable and efficient solution for businesses to manage employee attendance, 
       </div>
     </section>
 
-        <!-- Experience -->
+    <!-- Experience -->
     <section id="experience" class="section container">
       <h2 class="section-title">Experience</h2>
       <div class="experience-timeline">
         <div class="timeline-item">
           <div class="timeline-date">Aug,2025 - Present</div>
           <div class="timeline-content">
-            <h3>Flutter Developer</h3>
+            <h3>Flutter Developer Intern</h3>
             <div class="company">Vidya Mine Pvt Ltd.</div>
-            <p>Developed cross-platform mobile applications using Flutter framework. Collaborated with UI/UX designers to implement responsive interfaces and integrated RESTful APIs for data management.</p>
+            <p>Developed cross-platform mobile applications using Flutter framework. Collaborated with UI/UX designers
+              to implement responsive interfaces and integrated RESTful APIs for data management.</p>
             <div class="chips">
               <span class="chip">Flutter</span>
               <span class="chip">Dart</span>
@@ -185,7 +276,8 @@ A scalable and efficient solution for businesses to manage employee attendance, 
           <div class="timeline-content">
             <h3>App Developer Intern</h3>
             <div class="company">Vidya Mine Pvt Ltd.</div>
-            <p>Built responsive Android applications using Flutter. Assisted in backend development with Node.js and database management with MySQL.</p>
+            <p>Built responsive Android applications using Flutter. Assisted in backend development with Node.js and
+              database management with MySQL.</p>
             <div class="chips">
               <span class="chip">Flutter</span>
               <span class="chip">Dart</span>
@@ -246,25 +338,25 @@ A scalable and efficient solution for businesses to manage employee attendance, 
       </div>
     </section>
 
-     <!-- Certificate Modal -->
-  <div id="certificate-modal" class="certificate-modal">
-    <div class="certificate-modal-content">
-      <span class="certificate-modal-close">&times;</span>
-      <h2 id="certificate-modal-title">Certificate Title</h2>
-      <img id="certificate-modal-image" src="" alt="Certificate" class="certificate-image">
-      <div class="certificate-details">
-        <p><strong>Issuer:</strong> <span id="certificate-modal-issuer"></span></p>
-        <p><strong>Date:</strong> <span id="certificate-modal-date"></span></p>
-        <p><strong>Description:</strong> <span id="certificate-modal-description"></span></p>
-      </div>
-      <div class="certificate-actions">
-        <a id="certificate-modal-download" href="#" download class="download-btn">
-          <i class="fas fa-download"></i> Download Certificate
-        </a>
-        <button class="certificate-modal-close-btn view-btn">Close</button>
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="certificate-modal">
+      <div class="certificate-modal-content">
+        <span class="certificate-modal-close">&times;</span>
+        <h2 id="certificate-modal-title">Certificate Title</h2>
+        <img id="certificate-modal-image" src="" alt="Certificate" class="certificate-image">
+        <div class="certificate-details">
+          <p><strong>Issuer:</strong> <span id="certificate-modal-issuer"></span></p>
+          <p><strong>Date:</strong> <span id="certificate-modal-date"></span></p>
+          <p><strong>Description:</strong> <span id="certificate-modal-description"></span></p>
+        </div>
+        <div class="certificate-actions">
+          <a id="certificate-modal-download" href="#" download class="download-btn">
+            <i class="fas fa-download"></i> Download Certificate
+          </a>
+          <button class="certificate-modal-close-btn view-btn">Close</button>
+        </div>
       </div>
     </div>
-  </div>
 
 
     <!-- Contact -->
@@ -273,15 +365,18 @@ A scalable and efficient solution for businesses to manage employee attendance, 
         <div class="contact-info">
           <h2 class="contact-title">Get in Touch</h2>
           <p class="contact-subtitle">Let’s Connect and Collaborate!</p>
-          <p class="contact-text">Whether you have a project in mind, a question to ask, or just want to say hello, feel free to reach out—I’d love to hear from you.</p>
+          <p class="contact-text">Whether you have a project in mind, a question to ask, or just want to say hello, feel
+            free to reach out—I’d love to hear from you.</p>
           <div class="contact-details">
             <a href="mailto:ranachahat@gmail.com" class="contact-email">✉️ ranachahat@gmail.com</a>
             <div class="contact-socials">
-  <a href="https://www.hackerrank.com/profile/ranachahat036" target="_blank"><i class="fab fa-hackerrank"></i></a>
-  <a href="https://www.linkedin.com/in/chahat-rana-306391218/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://github.com/chahat-rana97" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="https://app.netlify.com/" target="_blank"><i class="fab fa-netlify"></i></a>
-</div>
+              <a href="https://www.hackerrank.com/profile/ranachahat036" target="_blank"><i
+                  class="fab fa-hackerrank"></i></a>
+              <a href="https://www.linkedin.com/in/chahat-rana-306391218/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/chahat-rana97" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://app.netlify.com/" target="_blank"><i class="fab fa-netlify"></i></a>
+            </div>
 
           </div>
         </div>
@@ -330,4 +425,5 @@ A scalable and efficient solution for businesses to manage employee attendance, 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
